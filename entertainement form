@@ -1,0 +1,32 @@
+def entertainment_form():
+    print("Welcome to the Entertainment Form!")
+    print("Please provide the following details:")
+    
+    name = input("Name: ")
+    age = input("Age: ")
+    email = input("Email: ")
+    
+    print("\nSelect your favorite entertainment type:")
+    print("1. Movies")
+    print("2. Music")
+    print("3. Books")
+    choice = input("Enter your choice (1/2/3): ")
+    
+    if choice == '1':
+        favorite_entertainment = "Movies"
+    elif choice == '2':
+        favorite_entertainment = "Music"
+    elif choice == '3':
+        favorite_entertainment = "Books"
+    else:
+        favorite_entertainment = "Unknown"
+    
+    print("\nThank you for providing the information!")
+    print("Here's a summary:")
+    print("Name:", name)
+    print("Age:", age)
+    print("Email:", email)
+    print("Favorite Entertainment Type:", favorite_entertainment)
+
+# Calling the function to run the form
+entertainment_form()
